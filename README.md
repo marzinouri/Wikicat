@@ -34,6 +34,7 @@ In this section we will explore each function of this package one by one:
 Let's start with ***set_lang*** function.
 
 This function is used to set the language of wikipedia.
+Check out [language editions of Wikipedia](https://en.wikipedia.org/wiki/List_of_Wikipedias) to find out what code you should use. 
 
 It is also used in ***create_category_file*** function.
 
