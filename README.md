@@ -1,6 +1,6 @@
-# Wikicat
+# 🐱Wikicat
 
-🐱 You can find a notebook version of this tutorial in wikicat_tutorial.ipynb.
+You can find a notebook version of this tutorial in wikicat_tutorial.ipynb.
 
 ## Goal and Purpose
 Wikicat is a module that helps us extract all the pages of a given category and write them to a json file. You just need to pass a standard language code and also a valid category name and that is all!
