@@ -40,7 +40,7 @@ It is also used in ***create_category_file*** function.
 
 This function gets:
     
-*   *lang_code*: a language standard code (ex. en: English, fa: Farsi, etc.)
+*   lang_code: a language standard code (ex. en: English, fa: Farsi, etc.)
 
 And returns:
 
@@ -98,7 +98,7 @@ import random
 
 sample = random.choice(category_data)
 parsed = json.loads(sample)
-print(json.dumps(parsed, indent = 4,ensure_ascii=False))
+print(json.dumps(parsed, indent = 4, ensure_ascii=False))
 ```
 
 
@@ -108,7 +108,8 @@ As you see, there is a trade-off between speed and not getting errors caused by 
 ## create_category_file
 This function wrapps the previous ones up into one function and is the most important part of wikicat.The main purpose of this function is to create a json file containing all data of a given category under the name of the category.
 
-Like **get_category_data** function this function gets:
+This function gets:
+*   lang_code: a language standard code (ex. en: English, fa: Farsi, etc.)
 *   category_name: name of a valid category in a given language
 *   categorymembers: list of members of this category
 *   min_delay: (default value: 1s) minimum delay in seconds to wait in between sending requests to wikipedia
@@ -123,7 +124,7 @@ then it creates the file and returns:
 We continue our "نثر فارسی" example. The code below writes all unique data to a file named نثرفارسی.json 
 All the arguements passed, are initialized in the previous part.
 ```
-deduplicated_data, data = wikicat.create_category_file(lang_code, category_name, min_delay, max_delay, max_level)
+deduplicated_data, data = wikicat.create_category_file(lang_code, category_name, min_delay, max_delay, level, max_level)
 ```
 Here is a random page selected from deduplicated_data:
 
@@ -131,7 +132,7 @@ Here is a random page selected from deduplicated_data:
 ```
 sample = random.choice(list(deduplicated_data))
 parsed = json.loads(sample)
-print(json.dumps(parsed, indent = 4,ensure_ascii=False))
+print(json.dumps(parsed, indent = 4, ensure_ascii=False))
 ```
 
 ### get_duplicate_elements
@@ -151,5 +152,5 @@ Here is a random page selected from duplicate_pages:
 ```
 sample = random.choice(duplicate_pages)
 parsed = json.loads(sample)
-print(json.dumps(parsed, indent = 4,ensure_ascii=False))
+print(json.dumps(parsed, indent = 4, ensure_ascii=False))
 ```
