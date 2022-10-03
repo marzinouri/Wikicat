@@ -39,7 +39,7 @@ It is also used in ***create_category_file*** function.
 
 This function gets:
     
-*   lang_code: a language standard code (ex. en: English, fa: Farsi, etc.)
+*   lang_code: a standard language code (ex. en: English, fa: Farsi, etc.)
 
 And returns:
 
