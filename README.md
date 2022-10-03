@@ -13,8 +13,7 @@ Use codes below to easily install via terminal:
 !pip install tqdm
 ```
 ## Libraries
-We need to import our wikicat library.
-We also need to import random library which helps us randomly choose a json object and print it.
+Now it's time to import our wikicat library as well as random and json libraries. They will help us randomly choose a json object and print it.
 
 
 ```
