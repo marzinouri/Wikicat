@@ -1,4 +1,4 @@
-# 🐱Wikicat
+# 🐱WikiCat
 
 You can find a notebook version of this tutorial in wikicat_tutorial.ipynb.
 
